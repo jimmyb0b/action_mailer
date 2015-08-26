@@ -14,3 +14,14 @@ There are essentially 3 methods that make up any email.
 	- attachments - any files to send with email
 	- mail - the actual text of the email. This can make use any of the headers that you've defined.
 
+
+Action Mailer can send emails through an email app such as gmail, mailgun, or others.
+You can also send from a local server, but to do so, you need to have two servers running, one for you're app and another for the mailer.
+
+
+Important Notes:
+
+Not all clients accept an email formatted with HTML, so it's best practice to create both and HTML and a text email. Action Mailer will automatically generate both.
+
+
+Action Mailer is intgrateed with Active Job, so you decide when you want to send emails. Either immediately with 'deliver_now' or use 'deliver_later' to set a different delivery schedule.
