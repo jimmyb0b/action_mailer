@@ -5,7 +5,7 @@
 
 Once you've created a new rails app, you can generate the mailer similarly to any other controller. 
 	
-	```rails generate mailer new_mailer_name ```
+<pre> <code>	rails generate mailer new_mailer_name </code> </pre>
 
 
 Just like other controllers, mailers use methods and views to structure content, but instead of rendering an HTML page, it fires off a email.
@@ -18,14 +18,20 @@ There are essentially 3 methods that make up any email.
 	<li> mail - the actual text of the email. This can make use any of the headers that you've defined. </li>
 </ul>
 
+<b>Full list of user settable attributes</b>
+![attr](/readme_images/user_set_attr.png)
 
 
-Action Mailer can send emails through an email app such as gmail, mailgun, or others. <br>
-You can also send from a local server, but to do so, you need to have two servers running, one for you're app and another for the mailer.
+
+<h3><b>Testing</b></h3>
+To test your emails send you can use an app like MailCatcher. It runs on a second local server and allows you to see what your recipients will recieve. This is great so you can verify what you;re sending and who its going to.
+
 
 
 <br>
 <b>Important Notes:</b>
+
+Action Mailer can send emails through an email app such as gmail, mailgun, or others.
 
 Not all clients accept an email formatted with HTML, so it's best practice to create both and HTML and a text email. Action Mailer will automatically generate both.
 
