@@ -1,11 +1,13 @@
 # action_mailer
 
-<h3>Action Mailer allows you to send email from your rails app! <b>WOW!</b></h3>
+<h2>Action Mailer allows you to send email from your rails app! </h2><br>
+<h2><b>WOW!</b></h2>
 
 
+<h3><b>Just like the others... but different</b></h3>
 Once you've created a new rails app, you can generate the mailer similarly to any other controller. 
 	
-<pre> <code>	rails generate mailer new_mailer_name </code> </pre>
+<pre><code> rails generate mailer **new_mailer_name** </code></pre>
 
 
 Just like other controllers, mailers use methods and views to structure content, but instead of rendering an HTML page, it fires off a email.
@@ -28,6 +30,10 @@ To test your emails send you can use an app like MailCatcher. It runs on a secon
 
 
 
+<h3><b>Sending the mail to recipients</b></h3>
+You can send the mail through other services like gmail, Mailgun
+
+
 <br>
 <b>Important Notes:</b>
 
@@ -37,3 +43,10 @@ Not all clients accept an email formatted with HTML, so it's best practice to cr
 
 
 Action Mailer is intgrateed with Active Job, so you decide when you want to send emails. Either immediately with 'deliver_now' or use 'deliver_later' to set a different delivery schedule.
+
+
+
+
+[Further Documentation Here](http://guides.rubyonrails.org/action_mailer_basics.html)
+
+
