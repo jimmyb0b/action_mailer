@@ -5,7 +5,7 @@
 
 Once you've created a new rails app, you can generate the mailer similarly to any other controller. 
 	
-	rails generate mailer *<i>new_mailer_name</i>* 
+	```rails generate mailer new_mailer_name ```
 
 
 Just like other controllers, mailers use methods and views to structure content, but instead of rendering an HTML page, it fires off a email.
