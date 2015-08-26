@@ -26,13 +26,15 @@ There are essentially 3 methods that make up any email.
 
 
 <h3><b>Testing</b></h3>
-To test your emails send you can use an app like MailCatcher. It runs on a second local server and allows you to see what your recipients will recieve. This is great so you can verify what you;re sending and who its going to.
+To test your emails send you can use an app like MailCatcher. It runs on a second local server and allows you to see what your recipients will recieve. This is great so you can verify what you're sending and who its going to.
 
 
 
 
 
 <h3><b>Sending the mail to recipients</b></h3>
+
+Add one of the following codes to config/environments/$RAILS_ENV.rb
 
 ```html
 config.action_mailer.delivery_method = :sendmail
@@ -47,7 +49,9 @@ config.action_mailer.default_options = {from: 'no-reply@example.com'}
 ```
 
 
-You can send the mail through other services like gmail
+Action Mailer can send emails through an email app such as gmail, mailgun, or others. <br>
+
+From gmail:
 
 ```html
 config.action_mailer.delivery_method = :smtp
@@ -65,7 +69,7 @@ config.action_mailer.smtp_settings = {
 <br>
 <b>Important Notes:</b>
 
-Action Mailer can send emails through an email app such as gmail, mailgun, or others.
+
 
 Not all clients accept an email formatted with HTML, so it's best practice to create both and HTML and a text email. Action Mailer will automatically generate both.
 
