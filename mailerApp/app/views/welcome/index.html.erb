@@ -1,0 +1,8 @@
+<h1>Demo</h1>
+<h2>Enter Info Below:</h2>
+
+<%= form_for @user do |f| %>
+<%= f.text_field :name, placeholder: "Name" %></br>
+<%= f.text_field :email, placeholder: "E-mail" %></br>
+<%= f.submit %>
+<% end %>
