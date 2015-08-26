@@ -1,6 +1,6 @@
 # action_mailer
 
-Action Mailer allows you to send email from your rails app! WOW!
+<h3>Action Mailer allows you to send email from your rails app! <b>WOW!</b></h3>
 
 
 Once you've created a new rails app, you can generate the mailer similarly to any other controller. 
@@ -20,12 +20,12 @@ There are essentially 3 methods that make up any email.
 
 
 
-Action Mailer can send emails through an email app such as gmail, mailgun, or others.
+Action Mailer can send emails through an email app such as gmail, mailgun, or others. <br>
 You can also send from a local server, but to do so, you need to have two servers running, one for you're app and another for the mailer.
 
 
 
-Important Notes:
+<b>Important Notes:</b>
 
 Not all clients accept an email formatted with HTML, so it's best practice to create both and HTML and a text email. Action Mailer will automatically generate both.
 
